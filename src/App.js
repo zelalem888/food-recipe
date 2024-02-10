@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Navar from './navbar';
+import Middle from './middle';
+import Navgation from './navigation';
+import Footer from './footer';
+import React, { useState } from 'react';
+
 
 function App() {
+  const [search, setSearch] = useState('');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Navar search={search} setSearch={setSearch}/>
+    <Middle search={search}/>
+    <Navgation />
+    <Footer />
     </div>
   );
 }
