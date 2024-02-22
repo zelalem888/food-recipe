@@ -12,7 +12,6 @@ function App() {
     <div>
     <Navar search={search} setSearch={setSearch}/>
     <Middle search={search}/>
-    <Navgation />
     <Footer />
     </div>
   );

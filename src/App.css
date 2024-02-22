@@ -56,3 +56,12 @@ input[type="submit"]{
   font-family: 'Quicksand', sans-serif;
   letter-spacing: 2px;
 }
+.pagenation-container{
+  text-align: center;
+  color: rgb(0, 0, 0);
+  letter-spacing: 8px;
+  font-weight: 200;
+  font-size: 1.5em;
+  display:contents;
+  
+}
